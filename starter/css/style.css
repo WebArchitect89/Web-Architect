@@ -2,14 +2,79 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
+
+#header {
+  margin: 5px 5px;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+ "me nav";
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
-h1,
+.header {
+  grid-area: header;
+  align-items: center;
+  justify-items: end;
+  background-color: rgb(68, 68, 68);
+  height: 80px;
+}
+
+
+#me{
+  grid-area: me;
+justify-items: start;
+}
+
+#nav {
+  grid-area: nav;
+  font-size: larger;
+  color: rgb(69, 207, 207);
+}
+
+a{
+  color: rgb(99, 211, 173);
+}
+
+.hero-banner{
+  grid-area:  hero-banner;
+  background-color: brown;
+}
+.page-section{ 
+  grid-area: page-section ;
+  
+} 
+
+#avatar{
+  grid-area: avatar;
+}
+
+#prework{
+  grid-area: prework;
+}
+
+#webarchitect{
+  grid-area: webarchitect;
+}
+
+#landing{
+  grid-area: landing;
+}
+
+#horiseon{
+  grid-area: horiseon;
+}
+
+#getting-pro{
+  grid-area:getting-pro ;
+}
+
+##
+h1{
+  
+},
 h2,
 h3,
 h4,
