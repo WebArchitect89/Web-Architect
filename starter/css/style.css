@@ -119,37 +119,79 @@ h2 {
 
 #prework {
   grid-area: prework;
-  border: 1px dashed darkgoldenrod;
+  border: 5px solid rgb(98, 206, 156);
   display: grid;
   align-items: flex-end;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 24px;
   padding: 20px;
-  
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
+
 
 #webarchitect {
   grid-area: webarchitect;
-  border: 1px dashed darkgoldenrod;
-
+  display: grid;
+  align-items: center;
+  border: 5px solid rgb(98, 206, 156);
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  padding: 20px;
+  color: white;
 }
 
 #landing {
   grid-area: landing;
-  border: 1px dashed darkgoldenrod;
+  display: grid;
+  align-items: center;
+  border: 5px solid rgb(98, 206, 156);
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  padding: 20px;
+  color: white;
 
 }
 
 #horiseon {
   grid-area: horiseon;
-  border: 1px dashed darkgoldenrod;
+  display: grid;
+  align-items: center;
+  border: 5px solid rgb(98, 206, 156);
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  padding: 20px;
+  color: white;
 
 }
 
 #getting-pro{
   grid-area: getting-pro;
-  border: 1px dashed darkgoldenrod;
+  display: grid;
+  align-items: center;
+  border: 5px solid rgb(98, 206, 156);
+  background-image: url(../images/02-run-buddy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  padding: 20px;
+  color: white;
+}
 
+.app-section a{
+  color: green;
 }
 
 #motivation {
