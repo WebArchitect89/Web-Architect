@@ -1,6 +1,6 @@
 * {
 
- margin: 0px;
+  margin: 0px;
 
 }
 
@@ -10,23 +10,11 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
- "me nav";
+  grid-template-areas:
+    "me nav";
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-.motavcontainer {
-  padding: 0;
-  display: grid;
-  grid-template-columns: 500px 300px 1000px  ;
-  grid-template-rows:100px 1fr 1fr;
-  grid-template-areas:
-  "avatar about motivation"
-  " avatar about  motivation";
-              
-}
-
-
 
 .header {
   grid-area: header;
@@ -36,16 +24,29 @@
   height: 80px;
 }
 
-
-#me{
-  grid-area: me;
-background-color: rgb(146, 207, 187);
+.motavcontainer {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 500px 200px 1000px;
+  grid-template-rows: 200px auto 100px;
+  grid-template-areas:
+    "avatar about motivation"
+    "avatar about  motivation";
 }
 
-#about{
-grid-area: about;
-font-size: 38px;
-font-style: normal;
+#me {
+  grid-area: me;
+  background-color: rgb(146, 207, 187);
+  display: flex;
+  justify-self: flex-start;
+}
+
+#about {
+  grid-area: about;
+  font-size: 38px;
+  margin-top: 50px;
+  border-right: 5px solid rgb(110, 110, 158);
+  margin-right: 20px;
 }
 
 #nav {
@@ -54,64 +55,127 @@ font-style: normal;
   color: rgb(69, 207, 207);
 }
 
-a{
+a {
   color: rgb(99, 211, 173);
 }
 
-.hero-banner{
-  grid-area:  hero-banner;
+.hero-banner {
+  grid-area: hero-banner;
   display: grid;
   background-image: url(../images/02-hero-bg.jpg);
   background-size: cover;
- height: 160px;
- align-content:flex-end;
- justify-content: end;
- font-size: larger;
+  height: 160px;
+  align-content: flex-end;
+  justify-content: end;
+  font-size: larger;
 }
-h2{
+
+.app-section {
+  margin-right: 20px;
+
+background-color: azure;
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+  display: grid;
+  grid-template-columns: 550px 200px 500px 500px ;
+  grid-template-rows:300px 100px 100px ;
+  grid-template-areas:"none abwork prework prework"
+                       "none abwork webarchitect landing"
+                       "none abwork horiseon getting-pro";
+                       
+}
+#contact {
+  display: grid;
+  min-height: 200px;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 500px 200px auto;
+grid-template-areas: " none cm contact-me";
+}
+
+h2 {
   background-color: rgb(146, 207, 187);
   margin: 20px;
   font-size: 42px;
 }
 
-.page-section{ 
-  grid-area: page-section ; 
-} 
+.page-section {
+  grid-area: page-section;
+}
 
-#avatar{
+#avatar {
   grid-area: avatar;
   size-adjust: 500px;
 }
 
-#prework{
+#abwork{
+  grid-area: abwork;
+  font-size: 38px;
+  border-right: 5px solid rgb(110, 110, 158);
+  margin-right: 80px;
+  
+}
+
+
+#prework {
   grid-area: prework;
+  border: 1px dashed darkgoldenrod;
+  display: grid;
+  align-items: flex-end;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  padding: 20px;
+  
 }
 
-#webarchitect{
+#webarchitect {
   grid-area: webarchitect;
+  border: 1px dashed darkgoldenrod;
+
 }
 
-#landing{
+#landing {
   grid-area: landing;
+  border: 1px dashed darkgoldenrod;
+
 }
 
-#horiseon{
+#horiseon {
   grid-area: horiseon;
+  border: 1px dashed darkgoldenrod;
+
 }
 
 #getting-pro{
-  grid-area:getting-pro ;
+  grid-area: getting-pro;
+  border: 1px dashed darkgoldenrod;
+
 }
-#motivation{
+
+#motivation {
   grid-area: motivation;
-  margin-top: 20px;
+  margin-top: 50px;
+  padding: 20px;
 
 }
 
-#
-h1{
-  
-},
+.page-wrapper {
+  background-color: azure;
+}
+
+
+#cm {
+  grid-area: cm;
+  font-size: 38px;
+  border-right: 5px solid rgb(110, 110, 158);
+margin-right: 25px;
+}
+
+#contact-me{
+  grid-area: contact-me;
+font-size: 22px;
+}
+
 h2,
 h3,
 h4,
