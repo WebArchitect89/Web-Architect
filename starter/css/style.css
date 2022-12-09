@@ -1,10 +1,12 @@
 * {
-  box-sizing: border-box;
+
+ margin: 0px;
+
 }
 
 
 #header {
-  margin: 5px 5px;
+
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -13,6 +15,18 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
+.motavcontainer {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 500px 300px 1000px  ;
+  grid-template-rows:100px 1fr 1fr;
+  grid-template-areas:
+  "avatar about motivation"
+  " avatar about  motivation";
+              
+}
+
+
 
 .header {
   grid-area: header;
@@ -25,7 +39,13 @@
 
 #me{
   grid-area: me;
-justify-items: start;
+background-color: rgb(146, 207, 187);
+}
+
+#about{
+grid-area: about;
+font-size: 38px;
+font-style: normal;
 }
 
 #nav {
@@ -40,15 +60,27 @@ a{
 
 .hero-banner{
   grid-area:  hero-banner;
-  background-color: brown;
+  display: grid;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+ height: 160px;
+ align-content:flex-end;
+ justify-content: end;
+ font-size: larger;
 }
+h2{
+  background-color: rgb(146, 207, 187);
+  margin: 20px;
+  font-size: 42px;
+}
+
 .page-section{ 
-  grid-area: page-section ;
-  
+  grid-area: page-section ; 
 } 
 
 #avatar{
   grid-area: avatar;
+  size-adjust: 500px;
 }
 
 #prework{
@@ -70,8 +102,13 @@ a{
 #getting-pro{
   grid-area:getting-pro ;
 }
+#motivation{
+  grid-area: motivation;
+  margin-top: 20px;
 
-##
+}
+
+#
 h1{
   
 },
